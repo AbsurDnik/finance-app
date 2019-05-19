@@ -35,7 +35,7 @@ public class ConsumptionServiceImpl implements ConsumptionService{
 			bank.setRelaxBank(bank.getRelaxBank()-myConsumption);
 		}
 		if(goal.equals("totalCosts")) {
-			bank.setRelaxBank(bank.getRelaxBank()-myConsumption);
+			bank.setRelaxBank(bank.getTotalCostsBank()-myConsumption);
 		}
 		bankRepository.save(bank);
 	}
